@@ -22,6 +22,10 @@ def get_robot_replay(question):
         answer = "我叫鬼鬼"
     elif "你多少岁" in question:
         answer = "18岁哦"
+    elif "你爸爸是谁" in question:
+        answer = "鬼鬼"
+    elif "你有多少钱" in question:
+        answer = "很多很多哦"
     elif "你是GG还是MM" in question:
         answer = "你猜"
     else:
@@ -41,10 +45,11 @@ if __name__ == '__main__':
     # print(get_robot_replay("你到底是谁"))
     # print(get_robot_replay("你爸爸是谁"))
     # print(get_robot_replay("叫爸爸"))
-    print("请输出任何内容开始和机器人聊天：\n")
+    print("请输出任何内容开始和小魔仙聊天：")
     while True:
-        a = input("")
-        print(get_robot_replay(a))
+        question = input("\n我说：")
+        answer = get_robot_replay(question)
+        print("\n小魔仙说: %s" % answer)
 
 
 
