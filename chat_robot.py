@@ -1,6 +1,13 @@
 #!/user/bin/env python3
 # -*- coding: utf-8 -*--
 
+'''
+文件描述：基于微信公众号实现AI客服
+作者：鬼鬼
+邮箱：guigui@wtugui.me
+时间：2019-6-29 16:13
+'''
+
 import urllib.request
 import urllib.parse
 import os
